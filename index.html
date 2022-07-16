@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet"> 
+    <style>
+        /**************** Universal ***************/
+      html {
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      *,
+      *:before,
+      *:after {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: inherit;
+      }
+
+      .icon-width {
+          width: 2.5rem;
+      }
+
+      button {
+          background-color: transparent;
+          border: 0;
+          cursor: pointer;
+      }
+
+      ul {
+          list-style: none;
+      }
+      /*************** Header **************/
+      header {
+          background-color: #000;
+          height: 5rem;
+          color: #fff;
+          display: flex;
+          text-align: right;
+      }
+
+      .header-menu {
+          width: 90%;
+          margin: auto;
+      }
+
+      .hidden {
+          display: none;
+      }
+
+      #nav {
+          background-color: #000;
+          position: absolute;
+          left: 0%;
+          right: 0%;
+          top: 7%;
+          text-align: center;
+      }
+
+      .option-menu {
+          cursor: pointer;
+          display: block;
+          width: 50%;
+          margin: 2rem auto;
+      }
+
+      .option-menu:active {
+              color: #3d68b1;
+              transition: 500ms;
+          }
+
+      /******************* Mediaquery ******************/
+
+      @media(min-width: 768px) {
+
+        /*************** Universal ***************/
+
+          /*************** Header ***************/
+          
+          #nav {
+              position: unset;
+              text-align: unset;
+          }
+
+          .hidden {
+              display: unset;
+          }
+
+          .header-btn-menu {
+              display: none;
+          }
+
+          .option-menu {
+              display: unset;
+              padding: 0rem 1rem;
+              width: 95%;
+              font-size: 18px;
+          }
+
+          .option-menu:hover {
+              color: #3d68b1;
+              transition: 500ms;
+          }
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="header-menu">
+            <div class="header-icon-menu">
+                <button onclick="toggleNav()" class="header-btn-menu"><img src="/Images/Menu.svg" alt="" class="icon-width"></button>
+            </div>
+            <nav id="nav" class="hidden">
+                <ul>
+                    <li class="option-menu"><a href=""></a>Sobre mí</li>
+                    <li class="option-menu"><a href=""></a>Habilidades</li>
+                    <li class="option-menu"><a href=""></a>Experiencia</li>
+                    <li class="option-menu"><a href=""></a>Portafolio</li>
+                    <li class="option-menu"><a href=""></a>Contactos</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script src="/main.js"></script>
+  </body>
+</html>
