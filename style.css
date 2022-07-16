@@ -5,7 +5,8 @@ html {
 }
 
 body {
-    background: #000;
+  background: #000;
+  color: #fff;
 }
 
 *,
@@ -40,18 +41,22 @@ a {
 }
 
 .logo-width {
-    width: 7rem;
+  width: 7rem;
 }
 
-.color-white {
-    color: #fff;
+.about-me-title,
+.portfolio-title,
+.skills-title,
+.experience-title {
+  margin-bottom: 2rem;
 }
+
 /*************** Header **************/
+
 header {
   position: sticky;
   background-color: #000;
   height: 5rem;
-  color: #fff;
   display: flex;
   text-align: right;
   width: 100%;
@@ -98,7 +103,6 @@ a:active {
   width: 95%;
   margin: auto;
   text-align: center;
-  color: #fff;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -113,41 +117,87 @@ a:active {
 /****************** About me ***************/
 
 .about-me {
-    background-color: #000;
+  background-color: #000;
+  padding: 2rem 0rem;
 }
 
 .about-me-all {
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    padding-bottom: 3rem;
-    color: #fff;
-}
-
-.about-me-title {
-    margin-bottom: 2rem;
+  width: 90%;
+  margin: auto;
+  text-align: center;
 }
 
 /******************* Skills ********************/
 
+.skills {
+  width: 90%;
+  margin: auto;
+}
+
 .skills-all {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.911)), url("./Images/fondo.png") no-repeat center center / cover;
-    text-align: center;
-    padding: 2rem;
-    border-radius: 40px;
+  background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.911),
+      rgba(0, 0, 0, 0.911)
+    ),
+    url("./Images/fondo.png") no-repeat center center / cover;
+  text-align: center;
+  border-radius: 400px;
+  border: 1px dashed #fff;
+  padding: 2rem 0rem;
 }
 
 .skills-flex {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
 }
 
+/****************** Experience ***************/
+
+.experience {
+  padding: 2rem;
+  text-align: center;
+  width: 95%;
+  margin: auto;
+}
+
+.experience-logo {
+  width: 10rem;
+  height: 8rem;
+  object-fit: cover;
+}
+
+.experience-logo-udemy {
+  width: 10rem;
+}
+/******************* Portfolio ******************/
+
+.portfolio {
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.img-portfolio {
+  width: 15rem;
+  height: 10rem;
+  box-shadow: #3d68b1 -20px 10px 1px 5px;
+}
+
+.padding-10px {
+  padding: 10px 0px;
+}
+
+.portafolio-project-two,
+.portafolio-project-three {
+  margin-top: 3rem;
+}
 /******************* Mediaquery ******************/
 
 @media (min-width: 768px) {
-
   /*************** Universal ***************/
 
   h1 {
@@ -155,11 +205,11 @@ a:active {
   }
 
   p {
-      font-size: 18px
+    font-size: 18px;
   }
-  
+
   h2 {
-      font-size: 35px;
+    font-size: 35px;
   }
   /*************** Header ***************/
 
@@ -217,5 +267,43 @@ a:active {
     width: 90%;
     margin: 4rem auto;
     justify-content: center;
-}
+  }
+
+  /*************** Experience **************/
+
+  .experience-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  /*************** Portfolio ****************/
+
+  .portafolio-project-two,
+  .portafolio-project-three {
+    margin-top: unset;
+  }
+
+  .portafolio-project-two {
+    padding-top: 3rem;
+  }
+
+  .portafolio-project-three {
+    padding-top: 6rem;
+  }
+
+  .img-portfolio {
+    width: 18rem;
+    height: 16rem;
+    border-radius: 10px;
+  }
+
+  .portfolio-flex {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
