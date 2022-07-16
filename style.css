@@ -4,6 +4,10 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+body {
+    background: #000;
+}
+
 *,
 *:before,
 *:after {
@@ -127,9 +131,10 @@ a:active {
 /******************* Skills ********************/
 
 .skills-all {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.829)), url("./Images/fondo.png") no-repeat center center / cover;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.911)), url("./Images/fondo.png") no-repeat center center / cover;
     text-align: center;
     padding: 2rem;
+    border-radius: 40px;
 }
 
 .skills-flex {
@@ -187,7 +192,7 @@ a:active {
 
   .front {
     padding: 6rem 0rem;
-    background-image: url("./Images/wave.svg");
+    background-image: url("./Images/wave(1).svg");
     background-repeat: no-repeat;
   }
 
