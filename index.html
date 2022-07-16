@@ -5,162 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi portafolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet"> 
-    <style>
-        /**************** Universal ***************/
-      html {
-        box-sizing: border-box;
-        font-family: 'Roboto', sans-serif;
-      }
-
-      *,
-      *:before,
-      *:after {
-        padding: 0%;
-        margin: 0%;
-        box-sizing: inherit;
-      }
-
-      .icon-width {
-          width: 2.5rem;
-      }
-
-      button {
-          background-color: transparent;
-          border: 0;
-          cursor: pointer;
-      }
-
-      ul {
-          list-style: none;
-      }
-
-      a {
-          text-decoration: none;
-      }
-
-      .color-blue {
-          color: #3d68b1;
-      }
-      /*************** Header **************/
-      header {
-          position: sticky;
-          background-color: #000;
-          height: 5rem;
-          color: #fff;
-          display: flex;
-          text-align: right;
-          width: 100%;
-          top: 0;
-      }
-
-      .header-menu {
-          width: 90%;
-          margin: auto;
-      }
-
-      .hidden {
-          display: none;
-      }
-
-      #nav {
-          background-color: #000;
-          position: absolute;
-          left: 0%;
-          right: 0%;
-          text-align: center;
-      }
-
-      .option-menu {
-          cursor: pointer;
-          display: block;
-          width: 50%;
-          margin: 2rem auto;
-      }
-
-      .option-menu:active {
-              color: #3d68b1;
-              transition: 500ms;
-          }
-
-          /****************** Front *****************/
-
-          .front {
-              background-color: #000;
-              padding: 2rem 0rem;
-          }
-          .front-flex {
-              width: 95%;
-              margin: auto;
-              text-align: center;
-              color: #fff;
-              display: flex;
-              flex-direction: column-reverse;
-          }
-
-          .my-image {
-              margin-bottom: 1.5rem;
-              height: 15rem;
-              box-shadow: #3d68b1 1px 1px 1px 6px;
-              border-radius: 50%;
-          }
-      /******************* Mediaquery ******************/
-
-      @media(min-width: 768px) {
-
-        /*************** Universal ***************/
-
-        h1 {
-            font-size: 55px;
-        }
-
-          /*************** Header ***************/
-          
-          #nav {
-              position: unset;
-              text-align: unset;
-          }
-
-          .hidden {
-              display: unset;
-          }
-
-          .header-btn-menu {
-              display: none;
-          }
-
-          .option-menu {
-              display: unset;
-              padding: 0rem 1rem;
-              width: 95%;
-              font-size: 18px;
-          }
-
-          .option-menu:hover {
-              color: #3d68b1;
-              transition: 500ms;
-          }
-
-                /************ Front ************/
-
-                .front {
-                    padding: 6rem 0rem;
-                }
-
-      .front-flex {
-          flex-direction: unset;
-          align-items: center;
-          justify-content: center;
-          width: 90%;
-          gap: 10rem;
-      }
-
-      .my-image {
-          height: 20rem;
-      }
-      }
-
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
     <header>
@@ -170,23 +16,50 @@
             </div>
             <nav id="nav" class="hidden">
                 <ul>
-                    <li class="option-menu"><a href="#"></a>Sobre mí</li>
-                    <li class="option-menu"><a href="#"></a>Habilidades</li>
-                    <li class="option-menu"><a href="#"></a>Portafolio</li>
-                    <li class="option-menu"><a href="#"></a>Experiencia</li>
-                    <li class="option-menu"><a href="#"></a>Contactos</li>
+                    <li class="option-menu"><a href="#about-me">Sobre mí</a></li>
+                    <li class="option-menu"><a href="#">Habilidades</a></li>
+                    <li class="option-menu"><a href="#">Portafolio</a></li>
+                    <li class="option-menu"><a href="#">Experiencia</a></li>
+                    <li class="option-menu"><a href="#">Contactos</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div class="front">
-        <div class="front-flex">
-            <div class="front-title">
-                <h1>¡Hola soy <span class="color-blue ">Edwin</span></h1>
-                <h2 class="color-blue ">Programador Full-Stack!</h2>
+    <div class="container">
+        <div class="front">
+            <div class="front-flex">
+                <div class="front-title">
+                    <h1>¡Hola soy <span class="color-blue ">Edwin</span></h1>
+                    <h2 class="color-blue ">Programador Full-Stack!</h2>
+                </div>
+                <div class="front-image">
+                    <img src="./Images/my-image.png" alt="" class="my-image">
+                </div>
             </div>
-            <div class="front-image">
-                <img src="./Images/my-image.png" alt="" class="my-image">
+        </div>
+        <div class="about-me" id="about-me">
+            <div class="about-me-all">
+                <div class="about-me-title">
+                    <h2 class="color-blue">Sobre mí</h2>
+                </div>
+                <div class="about-me-info">
+                    <p>Soy una persona que le gusta aprender dentro del mundo de la técnologia o fuera, con la habilidad de aprender rápido, tengo muchas ganas de crecer en este mundo desde que lo conoci en el 2021 me apasiono y hasta el sol de hoy sigo buscando de superarme cada día en conocimientos, me gusta también aportar un grano a los que quisieran aprender, respecto al trabajo en equipo es de mi agrado ya que me gusta también conversar mientras diseño y/o programo</p>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="skills-all">
+                <h2 class="color-blue">Habilidades</h2>
+                <div class="skills-flex">
+                    <div class="logo-html">
+                        <h2 class="color-blue">HTML</h2>
+                        <img src="/Images/logo-html.png" alt="" class="logo-width">
+                    </div>
+                    <div class="logo-css">
+                        <h2 class="color-blue">CSS</h2>
+                        <img src="/Images/logo-css.png" alt="" class="logo-width">
+                    </div>
+                </div>
             </div>
         </div>
     </div>

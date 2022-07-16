@@ -1,0 +1,208 @@
+/**************** Universal ***************/
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: inherit;
+}
+
+.icon-width {
+  width: 2.5rem;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.color-blue {
+  color: #3d68b1;
+}
+
+.logo-width {
+    width: 7rem;
+}
+/*************** Header **************/
+header {
+  position: sticky;
+  background-color: #000;
+  height: 5rem;
+  color: #fff;
+  display: flex;
+  text-align: right;
+  width: 100%;
+  top: 0;
+}
+
+.header-menu {
+  width: 90%;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#nav {
+  background-color: #000;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  text-align: center;
+}
+
+.option-menu {
+  cursor: pointer;
+  display: block;
+  width: 50%;
+  margin: 2rem auto;
+}
+
+a:active {
+  color: #3d68b1;
+  transition: 500ms;
+}
+
+/****************** Front *****************/
+
+.front {
+  background-color: #000;
+  padding: 2rem 0rem;
+}
+.front-flex {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.my-image {
+  margin-bottom: 1.5rem;
+  height: 15rem;
+  box-shadow: #3d68b1 1px 1px 1px 6px;
+  border-radius: 50%;
+}
+
+/****************** About me ***************/
+
+.about-me {
+    background-color: #000;
+}
+
+.about-me-all {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 3rem;
+    color: #fff;
+}
+
+.about-me-title {
+    margin-bottom: 1rem;
+}
+
+/******************* Skills ********************/
+
+.skills-all {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.829)), url("./Images/fondo.png") no-repeat center center / cover;
+    text-align: center;
+    padding: 2rem;
+}
+
+.skills-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/******************* Mediaquery ******************/
+
+@media (min-width: 768px) {
+
+  /*************** Universal ***************/
+
+  h1 {
+    font-size: 55px;
+  }
+
+  p {
+      font-size: 18px
+  }
+  
+  h2 {
+      font-size: 35px;
+  }
+  /*************** Header ***************/
+
+  #nav {
+    position: unset;
+    text-align: unset;
+  }
+
+  .hidden {
+    display: unset;
+  }
+
+  .header-btn-menu {
+    display: none;
+  }
+
+  .option-menu {
+    display: unset;
+    padding: 0rem 1rem;
+    width: 95%;
+    font-size: 18px;
+  }
+
+  a:hover {
+    color: #3d68b1;
+    transition: 500ms;
+  }
+
+  /************ Front ************/
+
+  .front {
+    padding: 6rem 0rem;
+  }
+
+  .front-flex {
+    flex-direction: unset;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 10rem;
+    margin-top: 6rem;
+  }
+
+  .my-image {
+    height: 20rem;
+  }
+
+  /*************** Skills ****************/
+
+  .skills-flex {
+    flex-direction: unset;
+    gap: 7rem;
+    width: 60%;
+    margin: 4rem auto;
+}
+}
