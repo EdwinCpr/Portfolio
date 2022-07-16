@@ -38,6 +38,10 @@ a {
 .logo-width {
     width: 7rem;
 }
+
+.color-white {
+    color: #fff;
+}
 /*************** Header **************/
 header {
   position: sticky;
@@ -85,6 +89,7 @@ a:active {
   background-color: #000;
   padding: 2rem 0rem;
 }
+
 .front-flex {
   width: 95%;
   margin: auto;
@@ -116,7 +121,7 @@ a:active {
 }
 
 .about-me-title {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 /******************* Skills ********************/
@@ -130,7 +135,7 @@ a:active {
 .skills-flex {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     margin-top: 2rem;
 }
 
@@ -182,6 +187,8 @@ a:active {
 
   .front {
     padding: 6rem 0rem;
+    background-image: url("./Images/wave.svg");
+    background-repeat: no-repeat;
   }
 
   .front-flex {
@@ -190,7 +197,7 @@ a:active {
     justify-content: center;
     width: 90%;
     gap: 10rem;
-    margin-top: 6rem;
+    margin-top: 2rem;
   }
 
   .my-image {
@@ -202,7 +209,8 @@ a:active {
   .skills-flex {
     flex-direction: unset;
     gap: 7rem;
-    width: 60%;
+    width: 90%;
     margin: 4rem auto;
+    justify-content: center;
 }
 }
