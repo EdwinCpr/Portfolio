@@ -126,7 +126,7 @@ a:active {
   display: block;
   white-space: nowrap;
   border-right: 4px solid;
-  width: 24ch;
+  width: 19.4ch;
   animation: typing 2s steps(12), blink .5s infinite step-end alternate;
   overflow:hidden; 
   }
@@ -144,7 +144,7 @@ a:active {
     margin: auto;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 16ch;
+    width: 12.5ch;
     animation: typing 2s steps(12), blink .5s infinite step-end alternate;
     overflow:hidden; 
     }
