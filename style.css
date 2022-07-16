@@ -54,6 +54,10 @@ a {
   margin-bottom: 2rem;
 }
 
+.font-small {
+  font-size: 12px;
+}
+
 /*************** Header **************/
 
 header {
@@ -140,8 +144,8 @@ a:active {
 .skills-all {
   background: linear-gradient(
       135deg,
-      rgba(0, 0, 0, 0.911),
-      rgba(0, 0, 0, 0.911)
+      rgba(0, 0, 0, 0.767),
+      rgba(0, 0, 0, 0.767)
     ),
     url("./Images/fondo.png") no-repeat center center / cover;
   text-align: center;
@@ -198,6 +202,14 @@ a:active {
 .portafolio-project-three {
   margin-top: 3rem;
 }
+
+.icon-github {
+  text-align: left;
+  margin-top: 1rem;
+  width: 2rem;
+  margin-bottom: -7px;
+}
+
 /******************* Mediaquery ******************/
 
 @media (min-width: 768px) {
@@ -266,7 +278,7 @@ a:active {
 
   .skills-flex {
     flex-direction: unset;
-    gap: 7rem;
+    gap: 4.5rem;
     width: 90%;
     margin: 4rem auto;
     justify-content: center;
@@ -308,5 +320,10 @@ a:active {
     gap: 5rem;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .portfolio-project-three-flex {
+    display: flex;
+    flex-direction: column;
   }
 }
