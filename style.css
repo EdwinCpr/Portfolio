@@ -47,7 +47,10 @@ a {
 .about-me-title,
 .portfolio-title,
 .skills-title,
-.experience-title {
+.experience-title,
+.experience-one,
+.experience-two,
+.experience-three {
   margin-bottom: 2rem;
 }
 
