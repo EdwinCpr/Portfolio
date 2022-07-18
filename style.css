@@ -50,12 +50,17 @@ a {
 .experience-title,
 .experience-one,
 .experience-two,
-.experience-three {
+.experience-three,
+.contact-title {
   margin-bottom: 2rem;
 }
 
 .font-small {
   font-size: 12px;
+}
+
+.width-90 {
+  width: 90%;
 }
 
 /*************** Header **************/
@@ -71,7 +76,6 @@ header {
 }
 
 .header-menu {
-  width: 90%;
   margin: auto;
 }
 
@@ -107,7 +111,6 @@ a:active {
 }
 
 .front-flex {
-  width: 95%;
   margin: auto;
   text-align: center;
   display: flex;
@@ -165,7 +168,6 @@ a:active {
 }
 
 .about-me-all {
-  width: 90%;
   margin: auto;
   text-align: center;
 }
@@ -175,7 +177,6 @@ a:active {
 /******************* Skills ********************/
 
 .skills {
-  width: 90%;
   margin: auto;
 }
 
@@ -221,7 +222,6 @@ a:active {
 
 .portfolio {
   padding: 2rem;
-  width: 90%;
   margin: auto;
   text-align: center;
 }
@@ -229,7 +229,8 @@ a:active {
 .img-portfolio {
   width: 15rem;
   height: 10rem;
-  box-shadow: #3d68b1 -20px 10px 1px 5px;
+  box-shadow: #3d68b1 -10px 2px 1px 5px;
+  border-radius: 10px;
 }
 
 .padding-10px {
@@ -246,6 +247,41 @@ a:active {
   margin-top: 1rem;
   width: 2rem;
   margin-bottom: -7px;
+}
+
+.contact-all {
+  text-align: center;
+  margin: auto;
+  padding: 2rem 0rem;
+}
+
+.contact-icon-flex {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-me {
+  margin-top: 3rem;
+}
+
+footer {
+  background-color: #3d68b1;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact-icon:hover {
+  background-color: #3d68b15b;
+}
+
+.contact-icon img:hover {
+  padding-top: .50rem;
+  transition: 500ms;
 }
 
 /******************* Mediaquery ******************/
@@ -303,13 +339,12 @@ a:active {
     flex-direction: unset;
     align-items: center;
     justify-content: center;
-    width: 90%;
-    gap: 10rem;
+    gap: 1.5%;
     margin-top: 2rem;
   }
 
   .my-image {
-    height: 20rem;
+    height: 18rem;
   }
 
   /*************** Skills ****************/
@@ -317,7 +352,6 @@ a:active {
   .skills-flex {
     flex-direction: unset;
     gap: 4.5rem;
-    width: 90%;
     margin: 4rem auto;
     justify-content: center;
   }
@@ -363,5 +397,13 @@ a:active {
   .portfolio-project-three-flex {
     display: flex;
     flex-direction: column;
+  }
+}
+
+/* Mediaquery-1024 */
+
+@media(min-width: 1024px) {
+  .front-flex {
+    gap: 8rem;
   }
 }
