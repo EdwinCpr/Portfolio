@@ -275,11 +275,11 @@ footer {
   font-weight: bold;
 }
 
-.contact-icon:hover {
+.contact-icon:active {
   background-color: #3d68b15b;
 }
 
-.contact-icon img:hover {
+.contact-icon img:active {
   padding-top: .50rem;
   transition: 500ms;
 }
@@ -397,6 +397,17 @@ footer {
   .portfolio-project-three-flex {
     display: flex;
     flex-direction: column;
+  }
+
+  /**************** Contact **************/
+
+  .contact-icon:hover {
+    background-color: #3d68b15b;
+  }
+  
+  .contact-icon img:hover {
+    padding-top: .50rem;
+    transition: 500ms;
   }
 }
 
