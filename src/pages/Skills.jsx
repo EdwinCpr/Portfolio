@@ -10,7 +10,7 @@ import TailwindCSS from "../images/tailwind.png";
 import Node from "../images/node.webp";
 import Postgres from "../images/postgres.webp";
 import Express from "../images/express.webp";
-// import Sequelize from "../images/sequelize.png";
+import Sequelize from "../images/Sequelize.png";
 import LogoTecnique from "../components/LogoTecnique";
 
 
@@ -38,7 +38,7 @@ const Skills = () => {
                             <LogoTecnique Name={"NodeJs"} Image={Node} />
                             <LogoTecnique Name={"PostgreSQL"} Image={Postgres} />
                             <LogoTecnique Name={"Express"} Image={Express} />
-                            {/* <LogoTecnique Name={"Sequelize"} Image={Sequelize} /> */}
+                            <LogoTecnique Name={"Sequelize"} Image={Sequelize} />
                         </div>
                     </div>
                 </div>
