@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: inherit;
+}
+
+body {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+}
+
+.container {
+    background-color: black;
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

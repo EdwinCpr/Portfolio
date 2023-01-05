@@ -1,0 +1,76 @@
+.skills {
+    background-color: #ffffff5d;
+    border: 1px solid #fff;
+    width: 18rem;
+    border-radius: 5px;
+    padding: 2rem 1rem;
+    height: 28rem;
+    overflow: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.skills::-webkit-scrollbar {
+    background-color: #fff;
+    width: .8rem;
+}
+
+.skills::-webkit-scrollbar-thumb {
+    background-color: #8ab4f8;
+}
+
+.skills-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #8ab4f8;
+}
+
+.techniques-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.list-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    row-gap: 1rem;
+    text-align: center;
+}
+
+.list-logo img {
+    width: 4rem;
+    object-fit: cover;
+}
+
+.list-logo p {
+    text-align: center;
+}
+
+.skills-soft {
+    margin-top: 1rem;
+}
+
+.soft-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.soft-list {
+    width: 10rem;
+    margin: auto;
+}
+
+.soft-list p {
+    margin-bottom: .3rem;
+}
+
+@media(min-width: 768px) {
+    .skills {
+        width: 23rem;
+    }
+
+    .list-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

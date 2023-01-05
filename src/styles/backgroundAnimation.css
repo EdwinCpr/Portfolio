@@ -1,0 +1,72 @@
+.backgroundAnimation {
+    height: 1rem;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 2rem;
+}
+
+.backgroundAnimation-flex-p {
+    display: flex;
+    justify-content: space-between;
+    animation: ball 10s ease-out infinite;
+    z-index: 5;
+}
+
+@keyframes ball {
+    0% {
+        transform: translateY(70%);
+    }
+
+    100% {
+        transform: translateY(-8300%);
+    }
+}
+
+.backgroundAnimation-flex-p p {
+    width: .50rem;
+    height: .50rem;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px 3px #8ab4f8;
+}
+
+.ball-2, .ball-8 {
+    margin-top: -100px;
+}
+.ball-3, .ball-10 {
+    margin-top: -40px;
+}
+
+.ball-5, .ball-12 {
+    margin-top: -500px;
+}
+
+.ball-6, .ball-14{
+    margin-top: -300px;
+}
+
+.backgroundAnimation-flex-div {
+    display: flex;
+    justify-content: space-between;
+    animation: ballTwo 10s ease-out infinite;
+
+}
+
+.backgroundAnimation-flex-div div {
+    width: .50rem;
+    height: .50rem;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px 3px #8ab4f8;
+}
+
+@keyframes ballTwo {
+    0% {
+        transform: translateY(70%);
+    }
+
+    100% {
+        transform: translateY(-8300%);
+    }
+}

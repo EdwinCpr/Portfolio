@@ -1,0 +1,21 @@
+.aboutme {
+    background-color: #ffffff5d;
+    border: 1px solid #fff;
+    width: 18rem;
+    border-radius: 5px;
+    padding: 2rem 1rem;
+    position: relative;
+    z-index: 10;
+}
+
+.aboutme-title {
+    text-align: center;
+    color: #8ab4f8;
+    margin-bottom: 1rem;
+}
+
+@media(min-width: 768px) {
+    .aboutme {
+        width: 23rem;
+    }
+}

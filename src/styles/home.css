@@ -1,0 +1,90 @@
+.home {
+    background-color: #ffffff5d;
+    border: 1px solid #fff;
+    width: 18rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+}
+
+.home-image {
+    text-align: center;
+    width: 100%;
+}
+
+.home-image img {
+    width: 100%;
+    background-color: #8ab4f8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.home-info {
+    padding: 0rem 1rem;
+}
+
+.info-name {
+    text-align: center;
+}
+
+.info-name h1 {
+    -webkit-text-stroke: .8px #000;
+}
+
+.info-cv {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.info-cv button {
+    background-color: #000;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #8ab4f8;
+    transition: 700ms;
+}
+
+.info-cv button:hover {
+    background-color: #8ab4f8;
+    border: 1px solid #fff;
+}
+
+.info-cv a {
+    color: #fff;
+}
+
+.contacts-flex {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.contacts-circle {
+    background-color: #000;
+    padding: .7rem .9rem;
+    border-radius: 100%;
+    transition: 700ms;
+    border: 1px solid #8ab4f8;
+}
+
+.contacts-circle:hover {
+    background-color: #8ab4f8;
+    transform: rotate(20deg);
+    border: 1px solid #fff;
+}
+
+.icon-contact {
+    font-size: 20px;
+}
+
+@media(min-width: 768px) {
+    .home {
+        width: 23rem;
+    }
+
+    .icon-contact {
+        font-size: 25px;
+    }
+}
